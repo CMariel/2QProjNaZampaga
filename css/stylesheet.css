@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFE8DB;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: rgb(45, 48, 71);
+}
+p {
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+h1, h2 {
+    text-shadow: 1px 1px 2px #545A83;
+    text-align: center;
+}
+#page_title {
+    margin-top: 50px;
+    
+}
+.links {
+    text-align: right;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    z-index: 1;
+    font-size: 87%;
+}
+#icon {
+    position: absolute;
+    top: 5px;
+    left: 0.5%;
+    width: 60px;
+}
+.overview {
+    position: absolute;
+    top: 100px;
+    left: 2.5%;
+    background-color: powderblue;
+    width: 95%;
+    height: 520px;
+    background: #C5B6E2 url("../images/mental_health.jpg") no-repeat scroll center;
+    border: solid rgb(45, 48, 71);
+}
+.overview p{
+    background-color: #C5B6E2;
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    width: 50%;
+    margin: 20px;
+    border: 2px solid rgb(45, 48, 71);
+}
+/* Positioning for lower half of the homepage */
+.lowerpart {
+    position: absolute;
+    top: 620px;
+    left: 2.5%;
+    width: 95%;
+}
+#arm_link {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 250px;
+}
+.arm_description {
+    background-color: #FFC7BA;
+    border: 2px solid rgb(45, 48, 71);
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    width: 50%;
+}
+/* positioning for the columns */
+.components {
+    position: absolute;
+    top: 100px;
+    left: 2.5%;
+    width: 95%;
+}
+.components #link {
+    text-align: center;
+}
+.components img {
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+.avoiding, .recognizing, .managing {
+    width: 32.33%;
+    border: 3px double black;
+    float: left;
+}
+.avoiding, .recognizing {
+    margin-right: 1.33%;
+}
+.avoiding {
+    background-color: #C5B6E2;
+}
+.recognizing {
+    background-color: #BBEAD5;
+}
+.managing {
+    background-color: #B4C5D4 ;
+}
+table, th, td {
+    border: 2px solid rgb(45, 48, 71);
+    border-collapse: collapse;
+    padding: 5px;
+}
+table{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+table#index {
+    top: 700px;
+}
+table#page1 {
+    top: 1180px;
+
+}
+/* Tab size for the APA formatting */
+#tab {
+    text-indent: 45px;
+    margin: 0px;
+    padding: 0px;
+}

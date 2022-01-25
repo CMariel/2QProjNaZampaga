@@ -1,0 +1,627 @@
+/* General styling for elements */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFE8DB;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: rgb(45, 48, 71);
+}
+p {
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #724BB9;
+}
+h1, h2, h3 {
+    text-shadow: 1px 1px 2px #545A83;
+    text-align: center;
+}
+article {
+    overflow: auto;
+}
+header {
+    margin-top: 60px;
+}
+/* Underline effect for links */
+nav a, #link {
+    position: relative;
+}
+nav a:hover, #link:hover {
+    color: #457DFB;
+    right: 0;
+    text-decoration: none;
+}
+nav a:hover::after, #link:hover::after {
+    border-color: #457DFB;
+    right: 0;
+}
+nav a::after, #link::after {
+    border-top: 2px solid #2F56B0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0px;
+    left: 0px;
+    transition: right .4s ease-in-out, border-color .4s ease-out;
+} 
+nav a:hover:after, #link:hover::after {
+    right: 0;
+}
+/* Navigation bar */
+nav {
+    text-align: right;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 2.5%;
+    z-index: -1;
+    font-size: 87%;
+    background-color: #C5B6E2;
+    width: 90%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #C5B6E2;
+}
+nav li {
+    float: right;
+    padding: 5px;
+    margin: 0;
+}
+nav li:hover {
+    background-color: #FFC7BA;
+}
+/* Logo for the website */
+#icon {
+    position: absolute;
+    top: 5px;
+    left: 0.5%;
+    width: 60px;
+}
+/* Styling for homepage */
+.overview {
+    position: absolute;
+    top: 115px;
+    left: 2.5%;
+    width: 95%;
+    height: 520px;
+    background: #C5B6E2 url("../images/mental_health.jpg") no-repeat scroll center;
+    border: solid rgb(45, 48, 71);
+}
+.overview p{
+    background-color: #C5B6E2;
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    width: 50%;
+    height: 160px;
+    overflow: auto;
+    margin: 20px;
+    border: 2px solid rgb(45, 48, 71);
+}
+.arm {
+    position: absolute;
+    top: 645px;
+    left: 2.5%;
+    width: 95%;
+    height: 400px;
+}
+#arm_link {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 250px;
+}
+.arm .columns {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    height: 100%;
+    width: calc(100% - 250px);
+}
+.arm_description, .music {
+    height: 100%;
+}
+.arm_description {
+    background-color: #FFC7BA;
+    border: 2px solid rgb(45, 48, 71);
+    position: absolute;
+    left: 40%;
+    right: 250px;
+    width: 60%;
+    overflow: auto;
+}
+.music {
+    position: absolute;
+    background-color: #B4C5D4;
+    border: 2px solid rgb(45, 48, 71);
+    width: 37.5%;
+    left: 0px;
+    overflow: auto;
+}
+audio {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+/* Styling for page 1 -- A.R.M in Arm page */
+
+/* Positioning for the section containiing the columns */
+.components {
+    position: absolute;
+    top: 100px;
+    left: 2.5%;
+    width: 95%;
+    height: 750px;
+}
+.components #link {
+    text-align: center;
+}
+.components img {
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+div.learn_more {
+    text-align: center;
+}
+.avoiding, .learn_more a:nth-of-type(1) {
+    background-color: #C5B6E2;
+}
+.recognizing, .learn_more a:nth-of-type(2) {
+    background-color: #BBEAD5;
+}
+.managing, .learn_more a:nth-of-type(3) {
+    background-color: #B4C5D4 ;
+}
+.components > article.thirds {
+    border-bottom: none;
+    height: 95%;
+}
+/* Hover effect for "learn more" links */
+.components > div > a:hover {
+    text-decoration: underline;
+    color: #457DFB;
+}
+
+/* General styling for elements in the content pages */
+
+/* For anything that needs to be split into 3 equal parts */
+.thirds {
+    width: 32.33%;
+    border: 3px double rgb(45, 48, 71);
+    float: left;
+    overflow: auto;
+}
+.avoiding, .recognizing, .emotions, .habits, .learn_more a:nth-of-type(1), .learn_more a:nth-of-type(2) {
+    margin-right: 1.33%;
+}
+.content {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    border: 2px solid rgb(45, 48, 71);
+}
+.content h2 {
+    text-align: center;
+    margin: 1%;
+    width: 25%;
+}
+#right, #left {
+    position: absolute;
+}
+p#left, p#right {
+    width: 74%;
+    text-align: left;
+}
+p#left {
+    text-align: left;
+}
+#left {
+    left: 0px;
+}
+#right {
+    right: 0px;
+}
+.content p, .content h2 {
+    position: absolute;
+}
+/* Styling for the avoiding page */
+.triggers h2{
+    top: 30%;
+}
+.triggers {
+    height: 237.5px;
+    background-color: #C5B6E2;
+}
+.trigger_warnings {
+    top: 380px;
+    background-color: #FFC7BA;
+    height: 300px;
+}
+.trigger_warnings div {
+    position: absolute;
+    top: 30%;
+    left: 74%;
+    width: 25%;
+}
+.trigger_warnings img {
+    width: 40%;
+    position: relative;
+    left: 30%
+}
+.trigger_warnings h2 {
+    top: 10%;
+}
+/* Styling for the recognizing page */
+
+/* Warning Signs and Symptoms article */
+.warning_signs {
+    background-color: #BBEAD5;
+    height: 760px;
+}
+.warning_signs h2{
+    top: 2.5%;
+}
+.warning_descrp {
+    position: absolute;
+    right: 0px;
+    width: 74%;
+    height: 150px;
+    overflow: auto;
+}
+.warning_descrp p {
+    width: 100%;
+    position: relative;
+}
+.warning_signs .thirds {
+    height: 470px;
+    position: relative;
+    top: 150px;
+    background-color: rgba(250, 256, 250, 0.3);
+}
+.warning_signs img {
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+.warning_signs #add_info{
+    top: 620px;
+}
+.warning_signs h3 {
+    height: 80px;
+}
+/* Styling for the diagnosing articles in recognizing page */
+.diagnose {
+    height: 200px
+}
+.diagnose h2 {
+    top: 20%;
+}
+/* Proper Diagnosis article */
+.pro_diagnose h2 {
+    top: 2.5%;
+}
+.pro_diagnose {
+    top: 910px;
+    background-color: #B4C5D4;
+}
+.pro_diagnose img {
+    position: absolute;
+    top: 44%;
+    left: 5.5%;
+    width: 15%;
+}
+/* Dangers of Self-diagnosing article */
+.self_diagnose {
+    background-color: #BBEAD5;
+    top: 1140px;
+}
+.self_diagnose h2 {
+    top: 30%;
+}
+/* Styling for the managing page */
+.managing_cover-photo{
+    position: absolute;
+    top: 110px;
+    height: 300px;
+    background: #C5B6E2 url("../images/coping.png") no-repeat scroll center;
+}
+.coping {
+    top: 440px;
+    height: 320px;
+    background-color: #B4C5D4;
+}
+.coping h2 {
+    top: 30%;
+    width: 30%;
+    overflow-wrap: break-word;
+}
+.coping p {
+    position: static;
+}
+.coping h3 {
+    position: relative;
+    left: 17px;
+}
+.coping div {
+    position: relative;
+    width: 69%;
+    left: 31%;
+}
+.help {
+    height: 240px;
+    top: 790px;
+    background-color: #C5B6E2;
+}
+.help h2 {
+    top: 30%;
+}
+/* Styling for the information page */
+.definition {
+    height: 175px;
+    background-color: #FFC7BA;
+}
+.definition h2 {
+    top: 25%;
+}
+.myths {
+    position: absolute;
+    top: 320px;
+    height: 650px;
+    background-color: #B4C5D4;
+    width: calc(96% - 300px);
+    left: 2.5%;
+    padding: 15px;
+    border: 2px solid rgb(45, 48, 71);
+    border-right: none;
+}
+.myth_pic {
+    position: absolute;
+    top: 320px;
+    left: calc(96% - 300px);
+    width: 300px;
+    height: 650px;
+    margin-left: 10px;
+    overflow: auto;
+    background-color: #B4C5D4;
+    border: 2px solid rgb(45, 48, 71);
+    border-left: 3px double #545A83;
+}
+.myth_pic img {
+    position: relative;
+    padding: 2px;
+    top: 15%;
+    width: 50%;
+    left: 25%;
+}
+.stigma_cover-photo {
+    position: absolute;
+    top: 1000px;
+    height: 300px;
+    background: url("../images/breaking_the_stigma.png") no-repeat scroll center center;
+}
+.stigma {
+    position: absolute;
+    background-color: #C5B6E2;
+    top: 1330px;
+    height: 330px;
+}
+.stigma h2 {
+    top: 10%;
+}
+.stigma div {
+    width: 74%;
+    position: relative;
+    left: 26%;
+}
+.stigma p {
+    position: static;
+}
+.stigma img {
+    position: absolute;
+    top: 39%;
+    left: 3.5%;
+    width: 20%;
+}
+.resources {
+    height: 300px;
+    position :absolute;
+    top: 1690px;
+    width: 95%;
+    left: 2.5%;
+    background-color: #FFC7BA;
+    overflow-x: hidden;
+}
+.resources h2 {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 30px;
+    background-color: #FFC7BA;
+}
+/* For the text */
+.resources > div:nth-of-type(1) {
+    overflow: auto;
+    width: calc(100% - 150px);
+    left: 150px;
+    position: absolute;
+    top: 35px;
+}
+/* For the logos */
+.resources > div:nth-of-type(2) {
+    position: absolute;
+    left: 1%;
+    width: 150px
+}
+.resources p, .resources ul {
+    position: static;
+}
+.resources > div > a {
+    width: 150px;
+    float: left;
+}
+/* Styling for logos. Images found in the spritesheet */
+.silakbo {
+	background: url('../images/iconsheet.png') no-repeat -53px -785px;
+	width: 72px;
+	height: 76px;
+    position: relative;
+    left: 30px;
+}
+.silakbo:hover {
+	background: url('../images/iconsheet.png') no-repeat -293px -785px;
+	width: 72px;
+	height: 76px;
+}
+.mentalhealth_ph {
+    background: url('../images/iconsheet.png') no-repeat -148px -787px;
+    top: 173px;
+	width: 127px;
+	height: 72px;
+}
+.mentalhealth_ph:hover {
+	background: url('../images/iconsheet.png') no-repeat -390px -787px;
+	width: 126px;
+	height: 72px;
+}
+footer {
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+}
+footer a {
+    width: fit-content;
+}
+.socmed {
+    background-color: #FFC7BA;
+    height: 270px;
+    border: 2px solid rgb(45, 48, 71);
+}
+.socmed h3 {
+    text-align: center;
+}
+/* Styling and positioning social media icons */
+.socmed > div {
+    position: relative;
+    width: 50%;
+    height: 180px;
+}
+.socmed a {
+    width: fit-content;
+}
+.socmed > div a:nth-of-type(even) {
+    position: absolute;
+    left: 70px;
+    display: block;
+}
+.socmed > div:nth-of-type(2) {
+    top: -199px;
+    left: 50%;
+    border-left: 2px solid rgb(45, 48, 71);
+}
+/* Positioning the text beside the icons */
+.socmed > div:nth-of-type(1) a:nth-of-type(2) {
+    top: -40px;
+}
+.socmed > div:nth-of-type(1) a:nth-of-type(4) {
+    top: -35px;
+}
+.socmed > div:nth-of-type(2) a:nth-of-type(2) {
+    top: -40px;
+}
+/* Styling for social media icons. Images found in the spritesheet */
+.tiktok {
+	background: url('../images/iconsheet.png') no-repeat -131px -644px;
+	width: 56px;
+	height: 57px;
+}
+.tiktok:hover {
+	background: url('../images/iconsheet.png') no-repeat -280px -644px;
+	width: 56px;
+	height: 57px;
+}
+.insta {
+	background: url('../images/iconsheet.png') no-repeat -131px -569px;
+	width: 56px;
+	height: 57px;
+}
+.insta:hover {
+	background: url('../images/iconsheet.png') no-repeat -280px -569px;
+	width: 56px;
+    height: 57px;
+}
+.youtube {
+	background: url('../images/iconsheet.png') no-repeat -55px -569px;
+	width: 56px;
+	height: 57px;
+}
+.youtube:hover {
+	background: url('../images/iconsheet.png') no-repeat -205px -569px;
+	width: 56px;
+	height: 57px;
+}
+/* Animation for icons */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+footer a div:hover, #icon:hover {
+    animation: rotate 0.45s ease-in-out 1;
+}
+/* Positioning for the footers in each page */
+footer.index {
+    position: absolute;
+    top: 1095px;
+}
+footer.page1 {
+    top:880px;
+}
+footer.avoiding_page {
+    top: 705px;
+}
+footer.recognizing_page {
+    top: 1370px
+}
+footer.managing_page {
+    top: 1040px;
+}
+footer.info {
+    top: 2020px
+}
+/* For the table of references */
+.sources {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+}
+table {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 950px;
+}
+table, th, td {
+    border: 2px solid rgb(45, 48, 71);
+    border-collapse: collapse;
+    padding: 5px;
+}
+/* Styling for links in the citations */
+table a:hover {
+    text-decoration: underline;
+    color: #457DFB;
+}
+/* Tab size for the APA formatting */
+#tab {
+    text-indent: 45px;
+    margin: 0px;
+    padding: 0px;
+}
